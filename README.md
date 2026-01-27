@@ -26,7 +26,7 @@ Após iterações, o modelo final apresentou as seguintes métricas:
 
 ## 🚀 Passo a Passo
 
-### 1. Selecionar Dataset
+### Selecionar Dataset
 
 -   Escolhido dataset com 1000 registros e campos ID_PRODUTO, DATA_EVENTO, QUANTIDADE_ESTOQUE.
 -   Adicionado novos campos para análise conforme categoria e prioridade: CATEGORIA, PRIORIDADE e FORNECEDOR.
@@ -48,7 +48,7 @@ Após iterações, o modelo final apresentou as seguintes métricas:
 | 23, 24 | Brinquedos | Média | KidsJoy |
 | 25 | Esportes | Alta | SportLife |
 
-### 2. Construir/Treinar
+### Construir/Treinar
 
 -   O dataset foi importado e o modelo foi criado a partir das seguintes configurações:
 <img width="1190" height="822" alt="Captura de tela 2026-01-23 123810" src="https://github.com/user-attachments/assets/68149bbb-eef8-4ce0-80e5-b07b41e98706" />
@@ -57,21 +57,11 @@ Após iterações, o modelo final apresentou as seguintes métricas:
 <img width="1732" height="822" alt="Captura de tela 2026-01-23 131310" src="https://github.com/user-attachments/assets/88f0f514-b097-47a2-b023-9d11f6de3d8b" />
 
 -   ID_PRODUTO foi escolhido como campo chave.
--   CATEGORIAS
--   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
+-   CATEGORIA foi selecionado como coluna de agrupamento de forma a prever a variação de estoque de acordo com a categoria do produto.
+-   Escolhido o tempo de 14 dias para p Forecast Horizon por se aproximar de uma previsão mais próxima da realidade onde os reabastecimentos giram em torno de uma a duas semanas.
+-   Treinamento realizado na versão Standard durando por volta de 2 horas.
 
-### 3. Analisar
 
--   Após o treinamento, examine as métricas de performance do modelo.
--   Verifique as principais características que influenciam as previsões.
--   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
+### Prever
 
-### 4. Prever
-
--   Use o modelo treinado para fazer previsões de estoque.
--   Exporte os resultados e analise as previsões geradas.
--   Documente suas conclusões e qualquer insight obtido a partir das previsões.
-
-## 🤔 Dúvidas?
-
-Esperamos que esta experiência tenha sido enriquecedora e que você tenha aprendido mais sobre Machine Learning aplicado a problemas reais. Se tiver alguma dúvida, não hesite em abrir uma issue neste repositório ou entrar em contato com a equipe da DIO.
+<img width="1771" height="586" alt="single_prediction_results" src="https://github.com/user-attachments/assets/431036a8-9ba6-498a-8019-69085381930b" />
